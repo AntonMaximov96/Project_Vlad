@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:src="@drawable/people"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@id/imageView"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="Дима мята" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="19:20" />
+    <TextView
+        android:id="@+id/number_guest"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="3 чел" />
+
+    <TextView
+        android:id="@+id/cal_basis"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/name"
+        android:layout_toEndOf="@id/imageView"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="1 базовый" />
+
+    <TextView
+        android:id="@+id/cal_prem"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="2 премиальный" />
+
+    <TextView
+        android:id="@+id/view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/plus_basis_one"
+        android:layout_toEndOf="@id/imageView"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck"
+        tools:paddingStart="10dp"
+        tools:text="Взял одну колу и попросил чай" />
+
+    <Button
+        android:id="@+id/plus_basis_one"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cal_basis"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/imageView"
+        android:backgroundTint="#32cd32"
+        tools:cornerRadius="0dp"
+        tools:ignore="SmallSp,TouchTargetSizeCheck"
+        android:contentDescription="@string/plus_basis_one"
+        />
+
+    <Button
+        android:id="@+id/minus_basis_one"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cal_basis"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/plus_basis_one"
+        tools:cornerRadius="0dp"
+        android:backgroundTint="#ff0000"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="@string/minus_basis_one"
+        />
+
+
+    <Button
+        android:id="@+id/plus_prem_two"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cal_basis"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/minus_prem_two"
+        android:backgroundTint="#32cd32"
+        tools:cornerRadius="0dp"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="@string/plus_prem_two"
+        />
+
+    <Button
+        android:id="@+id/minus_prem_two"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cal_basis"
+        tools:cornerRadius="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ff0000"
+        tools:ignore="TouchTargetSizeCheck"
+        android:contentDescription="@string/minus_prem_two"
+       />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view_comments"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#B0C4DE"
+        android:textColor="#5E35B1"
+        tools:cornerRadius="0dp"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:text="Delete" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/view_comments"
+        tools:text="Edit"
+        tools:cornerRadius="0dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <Button
+        android:id="@+id/plus_people"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view_comments"
+        android:layout_marginStart="7dp"
+        tools:cornerRadius="0dp"
+        tools:text="+"
+        android:backgroundTint="#32cd32"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edit"
+        android:background="#595959"/>
+
+</RelativeLayout>

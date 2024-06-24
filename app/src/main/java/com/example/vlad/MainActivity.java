@@ -1,8 +1,11 @@
 package com.example.vlad;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,19 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        EditText text_time_one = findViewById(R.id.text_time_one);
-        EditText text_time_two = findViewById(R.id.text_time_two);
-        EditText name_guest = findViewById(R.id.name_guest);
-        EditText number_of_guests = findViewById(R.id.number_of_guests);
-        EditText basic = findViewById(R.id.basic);
-        EditText premium = findViewById(R.id.premium);
-        EditText comments = findViewById(R.id.comments);
-        Button constants = findViewById(R.id.constants);
+//--------------------------------------------------------------------
 
 
         Button begin = findViewById(R.id.begin);
-
 
         begin.setOnClickListener(new View.OnClickListener() {
             @Override

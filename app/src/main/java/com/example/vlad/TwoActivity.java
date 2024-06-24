@@ -69,10 +69,7 @@ public class TwoActivity extends AppCompatActivity {
 
 //------------------------------------------------
 
-
-
     private void generateItem() {
-
 
 
         itemLists.add(new

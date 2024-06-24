@@ -9,10 +9,14 @@
     <string name="number_people">Колличество гостей</string>
     <string name="frequent_guest">Постоянники</string>
     <string name="comments">Комментарии</string>
-    <string name="time">ВРЕМЯ</string>
+    <string name="time_min">min</string>
+    <string name="time_hour">hour</string>
     <string name="todo">TODO</string>
     <string name="plus_basis_one">plus_basis_one</string>
     <string name="minus_basis_one">minus_basis_one</string>
     <string name="plus_prem_two">plus_prem_two</string>
     <string name="minus_prem_two">minus_prem_two</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="element">:</string>
 </resources>

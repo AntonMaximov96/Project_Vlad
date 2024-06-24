@@ -31,13 +31,13 @@ import java.util.Queue;
 
 public abstract class MySwipeHelper extends ItemTouchHelper.SimpleCallback {
     int buttonWidth;
-    private RecyclerView recyclerView;
+    private final RecyclerView recyclerView;
     private List<MyButton> buttonList;
-    private GestureDetector gestureDetector;
+    private final GestureDetector gestureDetector;
     private int swipePosition = -1;
     private float swipeThreshold = 0.5f;
-    private Map<Integer, List<MyButton>> buttonBuffer;
-    private Queue<Integer> removerQueue;
+    private final Map<Integer, List<MyButton>> buttonBuffer;
+    private final Queue<Integer> removerQueue;
     private GestureDetector.SimpleOnGestureListener gestureListener = new GestureDetector.SimpleOnGestureListener() {
 
         @Override
@@ -51,7 +51,6 @@ public abstract class MySwipeHelper extends ItemTouchHelper.SimpleCallback {
     };
     private View.OnTouchListener onTouchListener = new View.OnTouchListener() {
         // Внимание тут время урока 20:20
-
 
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -77,7 +76,6 @@ public abstract class MySwipeHelper extends ItemTouchHelper.SimpleCallback {
             return false;
         }
     };
-
 
     public MySwipeHelper(Context context, RecyclerView recyclerView, int buttonWidth) {
         super(0, ItemTouchHelper.LEFT);

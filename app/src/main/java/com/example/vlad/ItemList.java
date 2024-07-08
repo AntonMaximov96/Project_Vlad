@@ -2,41 +2,42 @@ package com.example.vlad;
 
 public class ItemList {
 
-    int time,numberGuests,cal_1,cal_2;
-    String name, comments;
+    int item_time_hour,item_time_min, number_guest,cal_1,cal_2;
+    String name_guest, comments;
 
 
-    public ItemList (int time, String name, int numberGuests, int cal_1, int cal_2, String comments){
-        this.time = time;
-        this.name = name;
-        this.numberGuests = numberGuests;
+    public ItemList (String name_guest,int item_time_hour,int item_time_min,  int number_guest, int cal_1, int cal_2, String comments){
+        this.name_guest = name_guest;
+        this.item_time_hour = item_time_hour;
+        this.item_time_min = item_time_min;
+        this.number_guest = number_guest;
         this.cal_1 = cal_1;
         this.cal_2 = cal_2;
         this.comments = comments;
     }
 
-    public int getTime() {
-        return time;
+    public int getItem_time_hour() {
+        return item_time_hour;
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setItem_time_hour(int item_time_hour) {
+        this.item_time_hour = item_time_hour;
     }
 
-    public int getNumberGuests() {
-        return numberGuests;
+    public int getItem_time_min() {
+        return item_time_min;
     }
 
-    public void setNumberGuests(int numberGuests) {
-        this.numberGuests = numberGuests;
+    public void setItem_time_min(int item_time_min) {
+        this.item_time_min = item_time_min;
     }
 
-    public String getName() {
-        return name;
+    public int getNumber_guest() {
+        return number_guest;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNumber_guest(int number_guest) {
+        this.number_guest = number_guest;
     }
 
     public int getCal_1() {
@@ -53,6 +54,14 @@ public class ItemList {
 
     public void setCal_2(int cal_2) {
         this.cal_2 = cal_2;
+    }
+
+    public String getName_guest() {
+        return name_guest;
+    }
+
+    public void setName_guest(String name_guest) {
+        this.name_guest = name_guest;
     }
 
     public String getComments() {

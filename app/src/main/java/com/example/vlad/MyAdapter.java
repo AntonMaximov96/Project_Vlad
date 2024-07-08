@@ -26,9 +26,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.item_time.setText(String.valueOf(items.get(position).getTime()));
-        holder.number_guest.setText(String.valueOf(items.get(position).getNumberGuests()));
-        holder.name_guest.setText(items.get(position).getName());
+
+
+        holder.name_guest.setText(items.get(position).getName_guest());
+        holder.item_time_hour.setText(String.valueOf(items.get(position).getItem_time_hour()));
+        holder.item_time_min.setText(String.valueOf(items.get(position).getItem_time_min()));
+        holder.number_guest.setText(String.valueOf(items.get(position).getNumber_guest()));
 
         holder.cal_1.setText(String.valueOf(items.get(position).getCal_1()));
         holder.cal_2.setText(String.valueOf(items.get(position).getCal_2()));
